@@ -7,7 +7,8 @@
     [Description] NVARCHAR(500) NULL, 
     [ImagePath] NVARCHAR(50) NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
-    [UpdatedAt] DATETIME NULL DEFAULT getDate() 
+    [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL 
 )
 GO
 

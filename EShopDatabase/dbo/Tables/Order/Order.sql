@@ -8,6 +8,7 @@
     [SettlementToSend] NVARCHAR(50) NOT NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL, 
     CONSTRAINT [FK_Order_User] FOREIGN KEY ([UserId]) REFERENCES [User]([Id]), 
     CONSTRAINT [FK_Order_PaymentFormat] FOREIGN KEY ([PaymentFormatId]) REFERENCES [PaymentFormat]([Id]), 
     CONSTRAINT [FK_Order_TransportationOption] FOREIGN KEY ([TransportationOptionId]) REFERENCES [TransportationOption]([Id])

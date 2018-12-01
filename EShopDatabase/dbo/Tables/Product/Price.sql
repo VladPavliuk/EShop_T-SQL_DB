@@ -6,6 +6,7 @@
     [Value] DECIMAL(18, 2) NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL, 
     CONSTRAINT [FK_Price_Product] FOREIGN KEY ([ProductId]) REFERENCES [Product]([Id]), 
     CONSTRAINT [FK_Price_PriceType] FOREIGN KEY ([PriceTypeId]) REFERENCES [PriceType]([Id]), 
     CONSTRAINT [AK_Price_Product_PriceType] UNIQUE ([ProductId], [PriceTypeId])

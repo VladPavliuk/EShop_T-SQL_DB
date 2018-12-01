@@ -9,7 +9,8 @@
     [PercentDiscountValue] INT NOT NULL DEFAULT 0, 
     [IsFreeDelivery] BIT NOT NULL DEFAULT 0, 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
-    [CreatedAt] DATETIME NULL DEFAULT getDate()
+    [CreatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL
 )
 GO
 

@@ -8,6 +8,7 @@
     [Token] NVARCHAR(500) NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL, 
     CONSTRAINT [AK_Admin_Email] UNIQUE ([Email])
 )
 GO

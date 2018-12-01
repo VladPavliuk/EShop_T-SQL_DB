@@ -10,6 +10,7 @@
     [Token] NVARCHAR(500) NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL, 
     CONSTRAINT [FK_User_UserType] FOREIGN KEY ([UserTypeId]) REFERENCES [UserType]([Id]), 
     CONSTRAINT [AK_User_Email] UNIQUE ([Email])
 )

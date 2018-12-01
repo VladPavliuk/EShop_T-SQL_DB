@@ -5,6 +5,7 @@
     [PriceTypeId] INT NOT NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL, 
     CONSTRAINT [FK_UserTypePriceTypeRelation_UserType] FOREIGN KEY ([UserTypeId]) REFERENCES [UserType]([Id]), 
     CONSTRAINT [FK_UserTypePriceTypeRelation_PriceType] FOREIGN KEY ([PriceTypeId]) REFERENCES [PriceType]([Id]), 
     CONSTRAINT [AK_UserTypePriceTypeRelation_UserType_PriceType] UNIQUE ([UserTypeId], [PriceTypeId])

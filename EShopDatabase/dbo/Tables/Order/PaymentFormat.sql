@@ -3,7 +3,8 @@
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Title] NVARCHAR(50) NOT NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
-    [UpdatedAt] DATETIME NULL DEFAULT getDate()
+    [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL
 )
 GO
 

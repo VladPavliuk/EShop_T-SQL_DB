@@ -7,6 +7,7 @@
     [Price] DECIMAL(18, 2) NOT NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
+    [DeletedAt] DATETIME NULL, 
     CONSTRAINT [FK_OrderProduct_Order] FOREIGN KEY ([OrderId]) REFERENCES [Order]([Id]), 
     CONSTRAINT [FK_OrderProduct_Product] FOREIGN KEY ([ProductId]) REFERENCES [Product]([Id]),
 	CONSTRAINT [AK_OrderProduct_Order_Product] UNIQUE([ProductId], [OrderId])
