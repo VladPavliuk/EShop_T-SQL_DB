@@ -5,7 +5,7 @@
     [TitleOnHomePage] NVARCHAR(50) NULL, 
     [TitleOnCategoryPage] NVARCHAR(50) NULL, 
     [Description] NVARCHAR(500) NULL, 
-    [ImagePath] NVARCHAR(50) NULL, 
+    [Image] VARBINARY(MAX) NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
     [DeletedAt] DATETIME NULL 

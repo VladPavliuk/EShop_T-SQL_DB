@@ -3,7 +3,7 @@
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Title] NVARCHAR(50) NOT NULL, 
     [Description] NVARCHAR(500) NULL, 
-    [ImagePath] NVARCHAR(50) NULL, 
+    [Image] VARBINARY(MAX) NULL, 
     [ActiveThreshold] INT NOT NULL DEFAULT 0, 
     [NumericDiscountValue] INT NOT NULL DEFAULT 0, 
     [PercentDiscountValue] INT NOT NULL DEFAULT 0, 

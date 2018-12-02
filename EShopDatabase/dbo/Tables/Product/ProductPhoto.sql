@@ -2,7 +2,7 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Title] NVARCHAR(50) NULL, 
-    [ImagePath] NVARCHAR(50) NOT NULL, 
+    [Image] VARBINARY(MAX) NOT NULL, 
     [ProductId] INT NOT NULL, 
     [CreatedAt] DATETIME NULL DEFAULT getDate(), 
     [UpdatedAt] DATETIME NULL DEFAULT getDate(), 
