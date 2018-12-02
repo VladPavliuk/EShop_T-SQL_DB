@@ -91,4 +91,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ToPay" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a61efde3-b764-45f3-a251-96f6d2bf204f" ChangeDateTime="12/02/2018 07:06:18">
+    <Property Name="ElementName" Value="[dbo].[Category].[ImagePath]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Category]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Image" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="95150456-abfd-45c5-9e24-c32586d4e621" ChangeDateTime="12/02/2018 07:09:02">
+    <Property Name="ElementName" Value="[dbo].[Discount].[ImagePath]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Discount]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Image" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b477f487-6b54-4d3c-b6f1-5e9252f4a6ab" ChangeDateTime="12/02/2018 07:09:22">
+    <Property Name="ElementName" Value="[dbo].[Product].[ImagePathOnProductPage]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageOnProductPage" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="87d0475a-ca9f-4448-b792-c78087a75f25" ChangeDateTime="12/02/2018 07:09:27">
+    <Property Name="ElementName" Value="[dbo].[Product].[ImagePathOnCategoryPage]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageOnCategoryPage" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d51e5501-8bf8-41be-8139-fce0fb569784" ChangeDateTime="12/02/2018 07:09:35">
+    <Property Name="ElementName" Value="[dbo].[ProductPhoto].[ImagePath]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProductPhoto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Image" />
+  </Operation>
 </Operations>
