@@ -12,15 +12,29 @@ BEGIN
 		RETURN
 	END
 
-	INSERT INTO [dbo].[OrderProduct]( 
-		[OrderId], 
-		[ProductId], 
-		[Amount], 
-		[Price]
-	) VALUES (
-		@OrderId,
-		@ProductId,
-		@Amount,
-		@Price
+	IF EXISTS(
+		SELECT 1 FROM [dbo].[OrderProduct] 
+		WHERE [OrderId] = @OrderId AND [ProductId] = @ProductId
 	)
+	BEGIN
+		UPDATE [dbo].[OrderProduct] 
+		SET [Amount] = [Amount] + @Amount 
+		WHERE [OrderId] = @OrderId AND [ProductId] = @ProductId
+	END
+
+	ELSE
+
+	BEGIN
+		INSERT INTO [dbo].[OrderProduct]( 
+			[OrderId], 
+			[ProductId], 
+			[Amount], 
+			[Price]
+		) VALUES (
+			@OrderId,
+			@ProductId,
+			@Amount,
+			@Price
+		)
+	END
 END
